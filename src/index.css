@@ -1,0 +1,82 @@
+:root {
+  /* Colors: Dark mode */
+  --gray100: hsl(0, 0%, 100%);
+  --gray70: hsl(0, 0%, 70%);
+  --gray0: hsl(0, 0%, 0%);
+
+  /* Colors: Light mode */
+  --tomato-400: hsl(9, 100%, 64%);
+  --dark30: hsl(0, 0%, 30%);
+
+  /* Fonts */
+  --ff: "Poppins", sans-serif;
+  --heading1: bold 1.125rem var(--ff);
+  --heading2: 1rem var(--ff);
+  --p: .875rem var(--ff);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--ff);
+  background-color: var(--gray0);
+  color: var(--gray100);
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+h1{
+  font: var(--heading1);
+  color: var(--gray100);
+}
+
+h2{
+  font: var(--heading2);
+  color: var(--gray100);
+}
+
+p{
+  font: var(--p);
+  color: var(--gray70);
+}
+
+/* Light mode */
+body.light-mode {
+  background-color: var(--tomato-400);
+  color: var(--gray100);
+}
+
+body.light-mode h1,
+body.light-mode h2{
+  color: var(--gray0);
+}
+
+body.light-mode p {
+  color: var(--gray70);
+}
+
+body.light-mode .theme-toggle{
+  background-color: var(--gray100);
+  color: var(--gray0);
+}
+
+.theme-toggle {
+  margin: 1.5rem auto;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--gray70);
+  color: var(--gray0);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background-color: var(--gray100);
+  transform: scale(1.05);
+}

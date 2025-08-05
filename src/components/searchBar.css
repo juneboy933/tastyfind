@@ -1,0 +1,152 @@
+.search-bar {
+    margin: 2rem auto;
+    border: 2px solid var(--gray0);
+    border-radius: 999px;
+    width: 90%;
+    max-width: 500px;
+    background-color: var(--gray70);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar:focus-within {
+    box-shadow: 0 0 0 4px var(--tomato-400);
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.6rem;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    outline: none;
+    color: var(--gray0);
+}
+
+.search-bar button {
+    background-color: var(--tomato-400);
+    color: var(--gray100);
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-bar button:hover {
+    background-color: var(--gray0);
+    color: var(--tomato-400);
+    transform: scale(1.05);
+}
+
+.recipe-list{
+    max-width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.item {
+    flex: 1 1 200px;
+    background-color: var(--gray100);
+    border: 1px solid var(--gray0);
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    transition: transform 0.2s ease;
+}
+
+.item:hover {
+    transform: translateY(-4px);
+}
+
+.item h2 {
+    text-decoration: underline;
+    color: var(--gray0);
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.item p {
+    color: var(--dark30);
+    margin-bottom: 0.6rem;
+}
+
+.item button {
+    padding: 0.6rem 0.8rem;
+    border: none;
+    border-radius: 8px;
+    color: var(--gray100);
+    background-color: var(--tomato-400);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.item button:hover {
+    background-color: var(--gray0);
+    transform: scale(1.05);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    color: #333333;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.modal h2 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: #222;
+}
+
+.modal img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.modal p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.modal button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    background-color: #d62828;
+}
