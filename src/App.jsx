@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import SearchBar from './components/searchBar';
 import './App.css'
+import SearchBar from './components/searchBar';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
