@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import './searchBar.css';
+import React, { useEffect, useState } from 'react'
+import './searchBar.css'
 
-const SearchBar = () => {
-  const [query, setQuery] = useState('');
+const SearchInput = () => {
+   const [query, setQuery] = useState('');
   const [recipes, setRecipes] = useState([]);
   const [selectedRecipe, setSelectedRecipe] = useState(null);
   const [showModal, setShowModal] = useState(false);
@@ -66,6 +66,6 @@ const SearchBar = () => {
       )}
     </>
   );
-};
+}
 
-export default SearchBar;
+export default SearchInput
